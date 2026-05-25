@@ -15,7 +15,20 @@ VCS_FLAGS += -debug_access+all -kdb +v2k +lint=TFIPC-L
 VCS_FLAGS += -top spi_tb_top
 VCS_FLAGS += -f tb/filelist.f
 
-.PHONY: all compile run full_sweep report verdi clean
+.PHONY: help all compile run full_sweep report verdi clean
+
+help:
+	@echo "Targets:"
+	@echo "  make all          - run default report flow"
+	@echo "  make compile      - compile SPI DUT and UVM testbench with VCS"
+	@echo "  make run          - run selected UVM test, override with TEST=<test_name>"
+	@echo "  make full_sweep   - run spi_full_sweep_test"
+	@echo "  make report       - run simulation and extract final summary"
+	@echo "  make verdi        - run simulation and open waveform/debug view"
+	@echo "  make clean        - remove generated simulation artifacts"
+	@echo ""
+	@echo "Variables:"
+	@echo "  TEST=$(TEST), SEED=$(SEED)"
 
 all: report
 

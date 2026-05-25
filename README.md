@@ -50,14 +50,3 @@ spi_base_test
 
 - SPI line의 bit-level timing과 transaction-level 결과를 함께 확인합니다.
 - Full sweep sequence로 단일 케이스가 아닌 반복 패턴 검증을 수행합니다.
-
-## 실행 방법
-
-Synopsys VCS와 UVM 1.2 환경에서 실행하는 기준입니다.
-
-```bash
-make full_sweep
-make report
-make verdi
-make clean
-```
