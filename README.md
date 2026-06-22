@@ -3,7 +3,7 @@
 ## 프로젝트 개요
 
 SPI Master/Slave 구조를 UVM testbench로 검증한 프로젝트입니다.
-SPI transaction을 모델링하고 full sweep sequence를 사용해 여러 전송 조합을 확인합니다.
+SPI transaction을 모델링하고 full sweep sequence를 사용해 여러 전송 조합을 확인합니다.  
 발표자료 PDF : https://drive.google.com/file/d/1bUSK24aqxWnLHGoAvgkcpFpof2c85KCd/view?usp=drive_link
 
 ## 목표 동작
